@@ -1,0 +1,102 @@
+/* Styling for the Available Quizzes Section */
+.available-quizzes {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-top: 20px;
+}
+
+.available-quizzes h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Styling for Each Quiz Card */
+.quiz-card {
+    display: inline-block;
+    background-color: #f8f9fa; /* Light gray background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    margin: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.quiz-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-card h2 {
+    font-size: 1.5rem;
+    color: #007bff; /* Blue text */
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.quiz-card p {
+    margin: 8px 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Styling for Buttons */
+.quiz-card button {
+    display: inline-block;
+    width: 80px;
+    margin: 5px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Like Button */
+.quiz-card button.like {
+    background-color: #28a745; /* Green */
+    color: white;
+}
+
+.quiz-card button.like:hover {
+    background-color: #218838; /* Darker green */
+    transform: translateY(-2px);
+}
+
+/* Unlike Button */
+.quiz-card button.unlike {
+    background-color: #dc3545; /* Red */
+    color: white;
+}
+
+.quiz-card button.unlike:hover {
+    background-color: #c82333; /* Darker red */
+    transform: translateY(-2px);
+}
+
+/* Play Button */
+.quiz-card button.play {
+    background-color: #007bff; /* Blue */
+    color: white;
+}
+
+.quiz-card button.play:hover {
+    background-color: #0056b3; /* Darker blue */
+    transform: translateY(-2px);
+}
+
+/* Button Focus States */
+.quiz-card button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .quiz-card {
+        width: 90%;
+    }
+}
