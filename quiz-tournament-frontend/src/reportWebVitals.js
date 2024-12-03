@@ -11,3 +11,4 @@ const reportWebVitals = onPerfEntry => {
 };
 
 export default reportWebVitals;
+/*This code dynamically imports the web-vitals library and executes performance metrics functions (getCLS, getFID, getFCP, getLCP, getTTFB) to measure and report web performance if a callback function (onPerfEntry) is provided.*/
