@@ -1,5 +1,6 @@
 import axios from "axios";
 
+/* importing axiosfrom axios */
 export const fetchAllQuizzes = async () => {
   const response = await axios.get("http://localhost:8080/api/quizzes/all");
   return response.data;
